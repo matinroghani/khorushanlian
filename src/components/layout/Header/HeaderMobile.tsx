@@ -37,7 +37,7 @@ export default function HeaderMobile() {
 
       <aside
         aria-hidden={!isOpen}
-        className={`fixed inset-y-0 right-0 z-50 flex w-1/2 flex-col overflow-y-auto overscroll-contain scrollbar-none border-l border-(--navbar-border) bg-(--navbar-bg) px-(--spacing-sidebar-x) py-(--spacing-sidebar-y) text-(--navbar-text) shadow-[-16px_0_40px_rgba(0,0,0,0.18)] transition-transform duration-300 ease-out ${
+        className={`fixed inset-y-0 right-0 z-50 flex w-2/3 flex-col overflow-y-auto overscroll-contain scrollbar-none border-l border-(--navbar-border) bg-(--navbar-bg) px-(--spacing-sidebar-x) py-(--spacing-sidebar-y) text-(--navbar-text) shadow-[-16px_0_40px_rgba(0,0,0,0.18)] transition-transform duration-300 ease-out ${
           isOpen ? "translate-x-0" : "pointer-events-none translate-x-full"
         }`}
       >

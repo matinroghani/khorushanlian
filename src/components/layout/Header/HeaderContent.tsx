@@ -6,29 +6,59 @@ import { Phone } from "lucide-react";
 
 export default function HeaderContent() {
   return (
-    <>
-      <div className="shrink-0">
+    <div
+      className="
+        flex
+        flex-col
+        gap-(--spacing-section-inner)
+
+        lg:flex-row
+        lg:items-center
+        lg:justify-between
+        lg:gap-10
+      "
+    >
+      {/* Logo */}
+      <div
+        className="
+          shrink-0
+
+          lg:flex-1
+        "
+      >
         <Logo />
       </div>
 
-      <div className="flex flex-1 justify-center lg:flex">
+      {/* Navigation */}
+      <div
+        className="
+          flex
+          justify-center
+
+          lg:flex-1
+        "
+      >
         <HeaderItems />
       </div>
 
+      {/* CTA */}
       <div
         className="
-        flex
-        w-full
-        flex-col
-        items-center
-        gap-3
-        lg:w-fit
-        lg:flex-row
-        lg:items-center
-      ">
+          flex
+          w-full
+          flex-col
+          items-center
+          gap-3
+
+          lg:flex-1
+          lg:flex-row
+          lg:items-center
+          lg:justify-end
+        "
+      >
         <PrimaryCta title="درخواست مشاوره فنی" />
         <SecondaryCta title="تماس با ما" icon={Phone} />
       </div>
-    </>
+    </div>
   );
 }

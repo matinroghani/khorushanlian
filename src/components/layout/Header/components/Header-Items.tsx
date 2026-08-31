@@ -6,8 +6,8 @@ export default function HeaderItems() {
     <nav aria-label="main navigation" className="w-full">
       <ul
         className="
-        mt-4
-        lg:mt-0
+          mt-4
+          lg:mt-0
           flex
           flex-col
           items-center
@@ -46,7 +46,6 @@ export default function HeaderItems() {
                 text-(--navbar-text)
                 transition-colors
                 duration-200
-                hover:bg-(--color-navy-800)
                 hover:text-(--color-blue-400)
                 lg:w-auto
                 lg:px-3

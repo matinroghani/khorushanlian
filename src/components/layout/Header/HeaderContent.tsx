@@ -22,7 +22,6 @@ export default function HeaderContent() {
       <div
         className="
           shrink-0
-
           lg:flex-1
         "
       >
@@ -34,7 +33,6 @@ export default function HeaderContent() {
         className="
           flex
           justify-center
-
           lg:flex-1
         "
       >

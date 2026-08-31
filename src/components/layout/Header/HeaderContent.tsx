@@ -47,6 +47,8 @@ export default function HeaderContent() {
           flex-col
           items-center
           gap-3
+          p-2
+          lg-p-0
 
           lg:flex-1
           lg:flex-row

@@ -42,7 +42,7 @@ export default function HeaderItems() {
                 lg:rounded-lg
                 px-3
                 py-3
-                text-lg
+                text-sm
                 text-(--navbar-text)
                 transition-colors
                 duration-200
@@ -50,7 +50,6 @@ export default function HeaderItems() {
                 lg:w-auto
                 lg:px-3
                 lg:py-2
-                lg:text-sm
               "
             >
               {item.label}

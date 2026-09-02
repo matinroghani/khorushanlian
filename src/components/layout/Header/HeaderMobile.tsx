@@ -13,7 +13,7 @@ export default function HeaderMobile() {
     <>
       <header className="flex items-center justify-between border-b border-(--navbar-border) bg-(--navbar-bg) px-(--spacing-header-x) py-(--spacing-header-y) text-(--navbar-text) lg:hidden">
         <div className="shrink-0">
-          <Logo />
+          <Logo  />
         </div>
 
         <button

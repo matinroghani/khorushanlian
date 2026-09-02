@@ -27,7 +27,7 @@
      TEXT
      ============================================= */
   --color-text-primary: #071b34;
-  --color-text-secondary: #41566b;
+  --color-text-secondary: #7f96aa;
   --color-text-muted: #71869a;
 
   /* =============================================
@@ -175,7 +175,7 @@
   /* =============================================
      SPACING - HERO
      ============================================= */
-  --spacing-hero-y: clamp(48px, 6vw, 80px);
+  --spacing-hero-y: clamp(24px, 4vw, 56px);
   --spacing-hero-gap: 24px;
 
   /* =============================================
@@ -185,9 +185,4 @@
   --spacing-component: 16px;
   --spacing-gap: 16px;
 
-  /* =============================================
-     SPACING - CTA & FOOTER
-     ============================================= */
-  --spacing-cta-y: clamp(32px, 4vw, 56px);
-  --spacing-footer-y: clamp(40px, 5vw, 64px);
 }

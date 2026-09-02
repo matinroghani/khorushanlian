@@ -18,28 +18,14 @@ export default function HeaderContent() {
         lg:gap-10
       "
     >
-      {/* Logo */}
-      <div
-        className="
-          shrink-0
-          lg:flex-1
-        "
-      >
+      <div className="shrink-0 lg:flex-1">
         <Logo />
       </div>
 
-      {/* Navigation */}
-      <div
-        className="
-          flex
-          justify-center
-          lg:flex-1
-        "
-      >
+      <div className="flex justify-center lg:flex-1">
         <HeaderItems />
       </div>
 
-      {/* CTA */}
       <div
         className="
           flex
@@ -48,12 +34,12 @@ export default function HeaderContent() {
           items-center
           gap-3
           p-2
-          lg-p-0
 
           lg:flex-1
           lg:flex-row
           lg:items-center
           lg:justify-end
+          lg:p-0
         "
       >
         <PrimaryCta title="درخواست مشاوره فنی" />

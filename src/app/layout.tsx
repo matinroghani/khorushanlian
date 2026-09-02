@@ -27,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Header />
         </div>
 
-        <main className="mx-auto w-full max-w-7xl flex-1 px-(--spacing-page-x) py-(--spacing-page-y)">
+        <main className=" w-full flex-1">
           {children}
         </main>
 

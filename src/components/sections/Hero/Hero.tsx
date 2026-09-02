@@ -13,11 +13,13 @@ export default function Hero() {
         justify-between
         gap-8
         w-full
+        min-h-screen
         overflow-hidden
 
         bg-[url('/images/ui/Hero/Hero-bg.png')]
         bg-cover
         bg-no-repeat
+        bg-fixed
         bg-center
         max-sm:bg-[position:65%_center]
         sm:bg-center

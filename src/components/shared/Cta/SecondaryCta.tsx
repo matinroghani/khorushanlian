@@ -19,7 +19,7 @@ export default function SecondaryCta({
         rounded-sm
         border
         border-(--color-border-dark)
-        bg-transparent
+        bg-(--color-navy-800)/50
         px-4
         py-2.5
         text-xs
@@ -29,7 +29,7 @@ export default function SecondaryCta({
         duration-300
         hover:-translate-y-0.5
         hover:border-(--color-blue-400)
-        hover:bg-(--color-blue-500)/10
+        hover:bg-(--color-blue-500)/30
         hover:text-(--color-blue-400)
         hover:shadow-md
         active:translate-y-0

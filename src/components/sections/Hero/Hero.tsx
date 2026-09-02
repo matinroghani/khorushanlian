@@ -17,8 +17,11 @@ export default function Hero() {
 
         bg-[url('/images/ui/Hero/Hero-bg.png')]
         bg-cover
-        bg-center
         bg-no-repeat
+        bg-center
+        max-sm:bg-[position:65%_center]
+        sm:bg-center
+        lg:bg-center
 
         px-(--spacing-page-x)
         py-(--spacing-hero-y)

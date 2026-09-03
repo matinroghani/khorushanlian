@@ -14,6 +14,8 @@ export default function Hero() {
         gap-6
         w-full
         overflow-hidden
+        border-b
+        border-(--navbar-border)
 
         bg-[url('/images/ui/Hero/Hero-bg.png')]
         bg-cover

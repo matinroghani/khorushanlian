@@ -8,7 +8,8 @@ export default function IndustrialSolutions() {
       className="
         flex
         flex-col
-        gap-8
+        gap-4
+        lg:gap-8
         px-(--spacing-page-x)
         py-8
       "

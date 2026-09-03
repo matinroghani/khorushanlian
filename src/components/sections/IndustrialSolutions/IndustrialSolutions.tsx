@@ -8,10 +8,13 @@ export default function IndustrialSolutions() {
       className="
         flex
         flex-col
-        gap-4
-        lg:gap-8
+        gap-6
         px-(--spacing-page-x)
-        py-8
+        pb-(--spacing-section)
+        pt-12
+        sm:pt-14
+        lg:gap-8
+        lg:pt-16
       "
     >
       <SectionTitle
@@ -23,19 +26,15 @@ export default function IndustrialSolutions() {
         className="
           grid
           grid-cols-1
-          gap-3
-          sm:gap-4
-          lg:grid-cols-3
-          lg:gap-5
+          gap-5
+          sm:grid-cols-2
+          sm:gap-6
+          xl:grid-cols-3
           2xl:grid-cols-5
-          2xl:gap-6
         "
       >
         {industrialSolutionItems.map((item) => (
-          <IndustrialSolutionsCard
-            key={item.id}
-            item={item}
-          />
+          <IndustrialSolutionsCard key={item.id} item={item} />
         ))}
       </div>
     </section>

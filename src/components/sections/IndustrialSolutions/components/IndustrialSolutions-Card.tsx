@@ -95,7 +95,7 @@ export default function IndustrialSolutionsCard({
               shrink-0
               items-center
               justify-center
-              rounded-lg
+              rounded-full
               border
               border-(--color-border-light)
               bg-(--color-surface)

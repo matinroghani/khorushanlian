@@ -1,7 +1,9 @@
 :root {
+
   /* =============================================
      BRAND
      ============================================= */
+
   --color-navy-950: #03152e;
   --color-navy-900: #041b38;
   --color-navy-800: #06264a;
@@ -9,178 +11,273 @@
   --color-blue-500: #0a84ff;
   --color-blue-400: #19a7ff;
 
+
   /* =============================================
      STEEL
      ============================================= */
+
   --color-steel-500: #477594;
   --color-steel-300: #9cb9cc;
   --color-steel-100: #e4edf3;
 
+
   /* =============================================
      LIGHT
      ============================================= */
+
   --color-white: #ffffff;
+
   --color-surface: #f6f9fc;
   --color-surface-muted: #edf3f8;
+
+  --color-surface-blue: #e3eef6;
+
 
   /* =============================================
      TEXT
      ============================================= */
+
   --color-text-primary: #071b34;
-  --color-text-secondary: #7f96aa;
-  --color-text-muted: #71869a;
+  --color-text-secondary: #5f788e;
+  --color-text-muted: #7f96aa;
+
 
   /* =============================================
      BORDER
      ============================================= */
+
   --color-border: #c8d8e3;
+  --color-border-light: #dce7ef;
+
   --color-border-dark: rgba(255, 255, 255, 0.12);
+
 
   /* =============================================
      STATUS
      ============================================= */
+
   --color-success: #00c98d;
   --color-warning: #f2b84b;
   --color-danger: #ef5b5b;
 
+
   /* =============================================
      NAVBAR
      ============================================= */
+
   --navbar-bg: var(--color-navy-950);
   --navbar-border: var(--color-border-dark);
+
   --navbar-text: var(--color-white);
   --navbar-text-muted: var(--color-steel-300);
+
 
   /* =============================================
      HERO
      ============================================= */
+
   --hero-bg: var(--color-navy-950);
+
   --hero-text: var(--color-white);
   --hero-text-muted: var(--color-steel-300);
+
   --hero-accent: var(--color-blue-500);
 
+
   /* =============================================
-     TRUST
+     TRUST / KEY METRICS
      ============================================= */
-  --trust-bg: var(--color-white);
+
+  --trust-bg: var(--color-surface-blue);
   --trust-border: var(--color-border);
+
+  --trust-text: var(--color-text-primary);
+  --trust-text-muted: var(--color-text-secondary);
+
   --trust-accent: var(--color-blue-500);
+
 
   /* =============================================
      SERVICES
      ============================================= */
+
   --services-bg: var(--color-surface);
   --services-card: var(--color-white);
-  --services-border: var(--color-border);
+
+  --services-border: var(--color-border-light);
   --services-icon: var(--color-blue-500);
+
+  --services-text: var(--color-text-primary);
+  --services-text-muted: var(--color-text-secondary);
+
 
   /* =============================================
      SOLUTIONS
      ============================================= */
+
   --solutions-bg: var(--color-surface-muted);
   --solutions-card: var(--color-white);
+
   --solutions-border: var(--color-border);
+
+  --solutions-text: var(--color-text-primary);
+  --solutions-text-muted: var(--color-text-secondary);
+
+  --solutions-accent: var(--color-blue-500);
+
 
   /* =============================================
      PRODUCTS
      ============================================= */
+
   --products-bg: var(--color-navy-900);
   --products-card: var(--color-navy-800);
+
   --products-border: var(--color-border-dark);
+
   --products-text: var(--color-white);
   --products-text-muted: var(--color-steel-300);
+
+  --products-accent: var(--color-blue-400);
+
 
   /* =============================================
      PROJECTS
      ============================================= */
+
   --projects-bg: var(--color-white);
   --projects-card: var(--color-white);
+
   --projects-border: var(--color-border);
+
   --projects-text: var(--color-text-primary);
   --projects-text-muted: var(--color-text-secondary);
+
+  --projects-accent: var(--color-blue-500);
+
 
   /* =============================================
      TECHNICAL
      ============================================= */
+
   --technical-bg: var(--color-navy-900);
   --technical-card: var(--color-navy-800);
+
   --technical-border: var(--color-border-dark);
+
+  --technical-text: var(--color-white);
+  --technical-text-muted: var(--color-steel-300);
+
   --technical-accent: var(--color-blue-400);
+
 
   /* =============================================
      WHY US
      ============================================= */
+
   --why-bg: var(--color-surface);
   --why-card: var(--color-white);
-  --why-border: var(--color-border);
+
+  --why-border: var(--color-border-light);
+
+  --why-text: var(--color-text-primary);
+  --why-text-muted: var(--color-text-secondary);
+
   --why-icon: var(--color-blue-500);
+
 
   /* =============================================
      ABOUT
      ============================================= */
+
   --about-bg: var(--color-surface-muted);
   --about-card: var(--color-white);
+
   --about-border: var(--color-border);
+
+  --about-text: var(--color-text-primary);
+  --about-text-muted: var(--color-text-secondary);
+
 
   /* =============================================
      CTA
      ============================================= */
+
   --cta-bg: var(--color-navy-950);
+
   --cta-text: var(--color-white);
   --cta-text-muted: var(--color-steel-300);
+
   --cta-accent: var(--color-blue-500);
+
 
   /* =============================================
      FOOTER
      ============================================= */
+
   --footer-bg: var(--color-navy-950);
   --footer-border: var(--color-border-dark);
+
   --footer-text: var(--color-white);
   --footer-text-muted: var(--color-steel-300);
+
 
   /* =============================================
      EFFECTS
      ============================================= */
+
   --shadow-sm: 0 4px 14px rgba(0, 22, 50, 0.06);
-  --shadow-md: 0 10px 30px rgba(0, 22, 50, 0.1);
+  --shadow-md: 0 10px 30px rgba(0, 22, 50, 0.10);
   --shadow-lg: 0 20px 50px rgba(0, 22, 50, 0.16);
+
 
   /* =============================================
      RADIUS
      ============================================= */
+
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 18px;
   --radius-xl: 24px;
 
+
   /* =============================================
      SPACING - PAGE
      ============================================= */
+
   --spacing-page-x: clamp(20px, 4vw, 64px);
   --spacing-page-y: clamp(24px, 3vw, 48px);
+
 
   /* =============================================
      SPACING - SECTION
      ============================================= */
+
   --spacing-section: clamp(48px, 6vw, 96px);
   --spacing-section-inner: clamp(24px, 3vw, 48px);
+
 
   /* =============================================
      SPACING - HEADER
      ============================================= */
+
   --spacing-header-x: clamp(20px, 3vw, 40px);
   --spacing-header-y: 14px;
   --spacing-header-gap: clamp(16px, 2vw, 32px);
 
+
   /* =============================================
      SPACING - HERO
      ============================================= */
+
   --spacing-hero-y: clamp(24px, 4vw, 56px);
   --spacing-hero-gap: 24px;
+
 
   /* =============================================
      SPACING - COMPONENTS
      ============================================= */
+
   --spacing-card: 20px;
   --spacing-component: 16px;
   --spacing-gap: 16px;

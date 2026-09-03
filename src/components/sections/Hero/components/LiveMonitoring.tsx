@@ -1,4 +1,4 @@
-import { generatorMetricItems } from "@/data/fenerator";
+import { generatorMetricItems } from "@/data/generator";
 
 export default function LiveMonitoring() {
   return (

@@ -11,9 +11,8 @@ export default function Hero() {
         lg:flex-row-reverse
         items-center
         justify-between
-        gap-8
+        gap-6
         w-full
-        min-h-screen
         overflow-hidden
 
         bg-[url('/images/ui/Hero/Hero-bg.png')]
@@ -22,18 +21,17 @@ export default function Hero() {
         bg-fixed
         bg-center
         max-sm:bg-[position:65%_center]
-        sm:bg-center
-        lg:bg-center
 
         px-(--spacing-page-x)
-        py-(--spacing-hero-y)
+        py-12
+        lg:py-16
       "
     >
-      <div className="flex flex-col items-center lg:items-start w-full lg:w-auto">
+      <div className="flex w-full flex-col items-center lg:w-auto lg:items-start">
         <Tagline />
       </div>
-      
-      <div className="flex justify-center w-full lg:w-auto">
+
+      <div className="flex w-full justify-center lg:w-auto">
         <LiveMonitoring />
       </div>
     </section>

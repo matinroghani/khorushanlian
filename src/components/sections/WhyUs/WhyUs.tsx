@@ -115,23 +115,13 @@ export default function WhyUs() {
         </div>
       </div>
 
-      <div className="shrink-0 order-first lg:order-none">
+      <div className="shrink-0 order-first lg:order-none w-full lg:w-auto">
         <Image
           src="/images/ui/whyUs/whyUs-image.jpg"
           alt="چرا ما؟ - تصویر صنایع حیاتی"
           width={800}
           height={800}
-          className="
-            w-auto
-            h-auto
-            max-w-[400px]
-            md:max-w-[500px]
-            lg:max-w-[600px]
-            xl:max-w-[700px]
-            rounded-2xl
-            shadow-[var(--shadow-md)]
-            object-contain
-          "
+          className=" block w-full h-auto max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px] rounded-2xl shadow-[var(--shadow-md)] object-contain"
           priority
         />
       </div>

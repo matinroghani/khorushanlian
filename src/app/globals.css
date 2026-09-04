@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: var(--color-surface);
+  background-color: var(--trust-bg);
 }
 
 @utility scrollbar-none {

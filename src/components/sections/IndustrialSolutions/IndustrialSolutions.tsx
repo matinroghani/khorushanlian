@@ -10,7 +10,7 @@ export default function IndustrialSolutions() {
         gap-10
         px-(--spacing-page-x)
         py-10
-        bg-(--trust-bg)
+        bg-(--color-surface)
         lg:gap-12
         rounded-xl
       "

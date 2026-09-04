@@ -12,7 +12,7 @@ export default function KeyMetric() {
         gap-0
         px-(--spacing-page-x)
         py-4
-        bg-(--trust-bg)
+        bg-(--color-surface)
         md:flex-row
         rounded-br-xl
         rounded-bl-xl

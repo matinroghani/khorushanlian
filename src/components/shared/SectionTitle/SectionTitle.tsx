@@ -12,7 +12,6 @@ export default function SectionTitle({
   return (
     <div
       className="
-        mx-auto
         flex
         flex-col
         items-center

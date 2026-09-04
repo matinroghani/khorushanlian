@@ -10,6 +10,7 @@ export default function Footer() {
         border-(--navbar-border)
         bg-(--color-navy-950)
         text-(--color-surface)
+        mt-10
       "
     >
       <div

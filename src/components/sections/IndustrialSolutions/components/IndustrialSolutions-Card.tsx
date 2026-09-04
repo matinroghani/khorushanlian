@@ -7,30 +7,56 @@ type IndustrialProps = {
   item: IndustrialSolutionType;
 };
 
-export default function IndustrialSolutionsCard({
-  item,
-}: IndustrialProps) {
+export default function IndustrialSolutionsCard({ item }: IndustrialProps) {
   const Icon = item.icon;
 
   return (
     <article
       className="
         group
+        relative
         flex
         h-full
+        w-full
         flex-col
         overflow-hidden
-        rounded-xl
+        rounded-2xl
         border
         border-(--color-border-light)
         bg-(--color-white)
+        shadow-[var(--shadow-sm)]
         transition-all
         duration-300
-        hover:-translate-y-1
+        ease-out
+        hover:-translate-y-1.5
         hover:border-(--color-blue-500)
-        hover:shadow-[0_16px_40px_rgba(7,27,52,0.09)]
+        hover:shadow-[var(--shadow-lg)]
+        hover:bg-gradient-to-b
+        hover:from-(--color-blue-50)/20
+        hover:to-(--color-white)
       "
     >
+      {/* Decorative top line - appears on hover */}
+      <div
+        className="
+          absolute
+          -top-0.5
+          left-1/2
+          h-1
+          w-12
+          -translate-x-1/2
+          rounded-full
+          bg-(--color-blue-500)
+          opacity-0
+          transition-all
+          duration-300
+          ease-out
+          group-hover:opacity-100
+          group-hover:w-20
+          z-10
+        "
+      />
+
       <div
         className="
           relative
@@ -48,25 +74,31 @@ export default function IndustrialSolutionsCard({
           className="
             object-cover
             transition-transform
-            duration-500
-            group-hover:scale-105
+            duration-700
+            ease-out
+            group-hover:scale-110
           "
           sizes="
-            (min-width: 1024px) 20vw,
-            (min-width: 768px) 50vw,
+            (min-width: 1536px) 18vw,
+            (min-width: 1280px) 30vw,
+            (min-width: 768px) 45vw,
             100vw
           "
         />
 
+        {/* Gradient overlay */}
         <div
           className="
             pointer-events-none
             absolute
             inset-0
             bg-gradient-to-t
-            from-(--color-navy-950)/35
+            from-(--color-navy-950)/50
             via-transparent
             to-transparent
+            transition-opacity
+            duration-300
+            group-hover:opacity-80
           "
         />
       </div>
@@ -78,16 +110,11 @@ export default function IndustrialSolutionsCard({
           flex-col
           p-4
           sm:p-5
+          lg:p-6
         "
       >
-        {/* Icon */}
-        <div
-          className="
-            flex
-            flex-col
-            items-center
-          "
-        >
+        {/* Icon & separator */}
+        <div className="flex flex-col items-center">
           <div
             className="
               flex
@@ -102,32 +129,35 @@ export default function IndustrialSolutionsCard({
               text-(--color-blue-500)
               transition-all
               duration-300
+              ease-out
               group-hover:border-(--color-blue-500)
               group-hover:bg-(--color-blue-500)
               group-hover:text-(--color-white)
+              group-hover:scale-110
+              group-hover:shadow-[var(--shadow-sm)]
               sm:size-12
             "
           >
-            <Icon
-              size={21}
-              strokeWidth={1.8}
-            />
+            <Icon size={20} strokeWidth={1.8} />
           </div>
 
           <span
             className="
-              mt-4
+              mt-3.5
               h-px
               w-full
               bg-(--color-border-light)
+              transition-colors
+              duration-300
+              group-hover:bg-(--color-blue-200)
             "
           />
         </div>
 
-        {/* Information */}
+        {/* Content */}
         <div
           className="
-            mt-5
+            mt-4
             flex
             flex-col
             gap-2
@@ -136,42 +166,44 @@ export default function IndustrialSolutionsCard({
         >
           <h3
             className="
-              text-base
+              text-sm
               font-bold
-              leading-7
+              leading-6
               text-(--color-text-primary)
-              sm:text-lg
+              transition-colors
+              duration-300
+              group-hover:text-(--color-blue-600)
+              sm:text-base
             "
           >
-            {item.title}
+            <Link href={item.href}>{item.title}</Link>
           </h3>
 
           <p
             className="
-              text-sm
+              text-xs
               font-normal
-              leading-6
+              leading-relaxed
               text-(--color-text-secondary)
-              sm:leading-7
+              sm:text-sm
+              sm:leading-6
             "
           >
             {item.description}
           </p>
         </div>
 
-        {/* Footer */}
-        <div
-          className="
-            mt-auto
-            pt-6
-          "
-        >
+        {/* Footer link */}
+        <div className="mt-auto pt-5">
           <div
             className="
               border-t
               border-(--color-border-light)
-              text-left
               pt-4
+              text-left
+              transition-colors
+              duration-300
+              group-hover:border-(--color-blue-200)
             "
           >
             <Link
@@ -180,20 +212,19 @@ export default function IndustrialSolutionsCard({
                 inline-flex
                 items-center
                 gap-2
-                text-sm
+                text-xs
                 font-medium
                 text-(--color-blue-500)
                 transition-all
                 duration-300
-                group-hover:gap-3
+                ease-out
+                hover:text-(--color-navy-800)
+                group-hover:gap-3.5
+                sm:text-sm
               "
             >
               <span>مشاهده بیشتر</span>
-
-              <ArrowLeft
-                size={17}
-                strokeWidth={1.8}
-              />
+              <ArrowLeft size={16} strokeWidth={1.8} className="transition-transform duration-300 group-hover:-translate-x-0.5" />
             </Link>
           </div>
         </div>

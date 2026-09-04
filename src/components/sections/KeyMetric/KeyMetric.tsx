@@ -14,6 +14,8 @@ export default function KeyMetric() {
         py-4
         bg-(--trust-bg)
         md:flex-row
+        rounded-br-xl
+        rounded-bl-xl
       "
     >
 

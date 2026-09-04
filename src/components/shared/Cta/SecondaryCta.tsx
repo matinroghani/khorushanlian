@@ -1,12 +1,14 @@
+import Link from "next/link";
 import { CtaProps } from "@/types/cta";
 
 export default function SecondaryCta({
   title,
   icon: Icon,
+  href = "#",
 }: CtaProps) {
   return (
-    <button
-      type="button"
+    <Link
+      href={href}
       className="
         group
         inline-flex
@@ -57,6 +59,6 @@ export default function SecondaryCta({
       )}
 
       <span>{title}</span>
-    </button>
+    </Link>
   );
 }

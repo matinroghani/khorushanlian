@@ -5,6 +5,10 @@
   font-family: var(--font-yekan) !important ;
 }
 
+body{
+  background-color: var(--color-surface);
+}
+
 @utility scrollbar-none {
   scrollbar-width: none;
 
@@ -12,3 +16,4 @@
     display: none;
   }
 }
+

@@ -64,65 +64,19 @@ export default function Projects() {
         </div>
 
         <Link
-          href="/projects"
-          className="
-            group
-            inline-flex
-            w-full
-            items-center
-            justify-center
-            gap-3
-            rounded-(--radius-sm)
-            border
-            border-(--color-border)
-            bg-(--color-white)
-            px-5
-            py-3
-            text-sm
-            font-semibold
-            text-(--color-text-primary)
-            shadow-[var(--shadow-sm)]
-            transition-all
-            duration-300
-            ease-out
-            hover:-translate-y-0.5
-            hover:border-(--color-blue-500)
-            hover:text-(--color-blue-500)
-            hover:shadow-[var(--shadow-md)]
-            focus-visible:outline-none
-            focus-visible:ring-2
-            focus-visible:ring-(--color-blue-500)
-            focus-visible:ring-offset-2
-            sm:w-auto
-          "
-        >
-          <span>مشاهده همه پروژه‌ها</span>
+          href="/products"
+          className=" group inline-flex w-full items-center justify-center gap-2.5 rounded-(--radius-sm) border border-(--color-border) bg-(--color-white) px-4 py-2.5 text-sm font-medium text-(--color-text-primary) shadow-(--shadow-sm) transition-colors duration-200 hover:border-(--color-blue-500) hover:text-(--color-blue-500) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-blue-500) focus-visible:ring-offset-2 focus-visible:ring-offset-(--color-surface) sm:w-auto">
+          <span>مشاهده پروژه ها</span>
 
-          <span
+          <ArrowLeft
+            size={16}
+            strokeWidth={2}
             className="
-              flex
-              h-7
-              w-7
-              items-center
-              justify-center
-              rounded-full
-              bg-(--color-surface-muted)
-              transition-all
-              duration-300
-              group-hover:bg-(--color-blue-500)
-              group-hover:text-white
-            "
-          >
-            <ArrowLeft
-              size={15}
-              strokeWidth={2}
-              className="
-                transition-transform
-                duration-300
-                group-hover:-translate-x-0.5
-              "
-            />
-          </span>
+      transition-transform
+      duration-200
+      group-hover:-translate-x-1
+    "
+          />
         </Link>
       </header>
 

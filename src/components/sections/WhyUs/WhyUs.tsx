@@ -6,11 +6,12 @@ import React from "react";
 export default function WhyUs() {
   return (
     <section className="rounded-xl px-(--spacing-page-x) py-12 bg-(--color-surface) flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-      <div className="flex-1 w-full">
+      <div className="flex-1 min-w-0 w-full">
         <SectionTitle
           title="پایداری، بدون توقف"
           description="راهکارهایی برای صنایعی که تداوم عملکرد، یک ضرورت است."
         />
+
         <div className="flex flex-col gap-8 mt-8">
           <div
             className="
@@ -115,22 +116,28 @@ export default function WhyUs() {
         </div>
       </div>
 
-      <div className="shrink-0 order-first lg:order-none">
+      <div
+        className="
+          order-first
+          w-full
+          min-w-0
+          lg:order-none
+          lg:flex-1
+        "
+      >
         <Image
           src="/images/ui/whyUs/whyUs-image.jpg"
           alt="چرا ما؟ - تصویر صنایع حیاتی"
           width={800}
           height={800}
           className="
-            w-auto
+            block
             h-auto
-            max-w-[400px]
-            md:max-w-[500px]
-            lg:max-w-[600px]
-            xl:max-w-[700px]
+            w-full
+            max-w-full
             rounded-2xl
-            shadow-[var(--shadow-md)]
             object-contain
+            shadow-[var(--shadow-md)]
           "
           priority
         />

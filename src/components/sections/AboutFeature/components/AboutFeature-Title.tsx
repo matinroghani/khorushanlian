@@ -4,7 +4,7 @@ import { Factory } from "lucide-react";
 export default function AboutFeatureTitle() {
   return (
     <div className="flex min-w-0 flex-col gap-7">
-      <div className="flex items-start gap-4">
+      <div className="flex flex-col items-start gap-4 sm:flex-row">
         <div
           className="
             shrink-0
@@ -54,21 +54,29 @@ export default function AboutFeatureTitle() {
             key={title}
             className="
               flex
+              flex-col
               items-start
               gap-3
               rounded-(--radius-lg)
               bg-(--color-surface)
               p-4
+              sm:flex-row
             "
           >
-            <Icon
+            <div
               className="
-                mt-0.5
-                size-5
+                flex
+                size-9
                 shrink-0
+                items-center
+                justify-center
+                rounded-md
+                bg-(--color-blue-500)/10
                 text-(--color-blue-500)
               "
-            />
+            >
+              <Icon className="size-5" />
+            </div>
 
             <div className="min-w-0">
               <h3

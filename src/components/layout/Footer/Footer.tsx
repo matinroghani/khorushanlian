@@ -1,5 +1,5 @@
 import FooterLinkSection from "./components/Footer-LinkSection";
-import { footerItems } from "@/data/footer";
+import { footerItems } from "@/data/layout-mocks/footer";
 import Logo from "@/components/shared/Logo/Logo";
 
 export default function Footer() {

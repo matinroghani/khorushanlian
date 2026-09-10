@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CtaProps } from "@/types/cta";
+import { CtaProps } from "@/types/shared-types/cta";
 
 export default function SecondaryCta({
   title,

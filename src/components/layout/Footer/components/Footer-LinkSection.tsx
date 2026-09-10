@@ -1,13 +1,11 @@
-import { FooterSection } from "@/types/footer";
+import { FooterSection } from "@/types/layout-types/footer";
 import Link from "next/link";
 
 type FooterLinkSectionProps = {
   data: FooterSection;
 };
 
-export default function FooterLinkSection({
-  data,
-}: FooterLinkSectionProps) {
+export default function FooterLinkSection({ data }: FooterLinkSectionProps) {
   return (
     <section>
       <h3

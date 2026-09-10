@@ -1,4 +1,4 @@
-import { CtaProps } from "@/types/cta";
+import { CtaProps } from "@/types/shared-types/cta";
 
 export default function PrimaryCta({ title }: CtaProps) {
   return (

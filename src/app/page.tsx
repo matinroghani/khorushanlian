@@ -1,11 +1,11 @@
-import AboutFeature from "@/components/sections/AboutFeature/AboutFeature";
-import Cta from "@/components/sections/CallToAction/Cta";
-import Hero from "@/components/sections/Hero/Hero";
-import IndustrialSolutions from "@/components/sections/IndustrialSolutions/IndustrialSolutions";
-import KeyMetric from "@/components/sections/KeyMetric/KeyMetric";
-import Products from "@/components/sections/Products/Products";
-import Projects from "@/components/sections/projects/Projects";
-import WhyUs from "@/components/sections/WhyUs/WhyUs";
+import AboutFeature from "@/components/homepage-sections/AboutFeature/AboutFeature";
+import Cta from "@/components/homepage-sections/CallToAction/Cta";
+import Hero from "@/components/homepage-sections/Hero/Hero";
+import IndustrialSolutions from "@/components/homepage-sections/IndustrialSolutions/IndustrialSolutions";
+import KeyMetric from "@/components/homepage-sections/KeyMetric/KeyMetric";
+import Products from "@/components/homepage-sections/Products/Products";
+import Projects from "@/components/homepage-sections/Projects/Projects";
+import WhyUs from "@/components/homepage-sections/WhyUs/WhyUs";
 import Reveal from "@/components/shared/Motion/Reveal";
 
 export default function Home() {

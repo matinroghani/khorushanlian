@@ -1,10 +1,14 @@
+import { Suspense } from "react";
+
 import ProjectsHero from "@/components/project-sections/Hero/Projects-Hero";
 import ProjectGrid from "@/components/project-sections/Project-Grid/Project-Grid";
 
 export default function Projects() {
   return (
     <main className="w-full">
-      <ProjectsHero />
+      <Suspense fallback={null}>
+        <ProjectsHero />
+      </Suspense>
 
       <section
         className="
@@ -14,7 +18,9 @@ export default function Projects() {
           lg:py-16
         "
       >
-        <ProjectGrid />
+        <Suspense fallback={null}>
+          <ProjectGrid />
+        </Suspense>
       </section>
     </main>
   );

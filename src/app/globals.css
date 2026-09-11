@@ -9,6 +9,10 @@ body{
   background-color: var(--trust-bg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @utility scrollbar-none {
   scrollbar-width: none;
 

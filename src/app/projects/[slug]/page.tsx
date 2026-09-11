@@ -31,14 +31,10 @@ const categoryLabels = {
   consulting: "مشاوره مهندسی",
 } as const;
 
-export default async function ProjectPage({
-  params,
-}: ProjectPageProps) {
+export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
 
-  const project = projectItems.find(
-    (item) => item.slug === slug,
-  );
+  const project = projectItems.find((item) => item.slug === slug);
 
   if (!project) {
     notFound();
@@ -46,25 +42,15 @@ export default async function ProjectPage({
 
   const categoryLabel = categoryLabels[project.category];
 
-  const galleryImages = getProjectGalleryImages(
-    project.image,
-  );
+  const galleryImages = getProjectGalleryImages(project.image);
 
-  const equipmentList = getProjectEquipment(
-    project.image,
-  );
+  const equipmentList = getProjectEquipment(project.image);
 
-  const specs = getProjectSpecs(
-    project,
-    categoryLabel,
-  );
+  const specs = getProjectSpecs(project, categoryLabel);
 
   return (
     <main className="w-full">
-      <Hero
-        project={project}
-        categoryLabel={categoryLabel}
-      />
+      <Hero project={project} categoryLabel={categoryLabel} />
 
       <ProjectMetaBar
         client={project.client}
@@ -77,37 +63,25 @@ export default async function ProjectPage({
         <ProjectTabs activeTab="overview" />
 
         <section
-          className="
-            grid
-            w-full
-            grid-cols-1
-            gap-8
-            px-(--spacing-page-x)
-            py-10
-            lg:grid-cols-[1fr_300px]
-            lg:gap-12
-          "
+          id="overview"
+          className=" grid w-full grid-cols-1 gap-8 px-(--spacing-page-x) py-10 lg:grid-cols-[1fr_300px] lg:gap-12"
         >
-          <ProjectOverview
-            overview={project.overview}
-            goals={projectGoals}
-          />
+          <ProjectOverview overview={project.overview} goals={projectGoals} />
 
-          <ProjectSidebar specs={specs} />
+          <ProjectSidebar project={project} />
         </section>
       </div>
 
-      <div className="my-5 rounded-xl bg-(--color-surface)">
+      <div id="gallery" className="my-5 rounded-xl bg-(--color-surface)">
         <ProjectGallery images={galleryImages} />
       </div>
 
-      <div className="rounded-xl bg-(--color-surface)">
-        <ProjectEquipment
-          equipmentList={equipmentList}
-        />
+      <div id="equipment" className="rounded-xl bg-(--color-surface)">
+        <ProjectEquipment equipmentList={equipmentList} />
       </div>
 
       <ProjectCTA
+        slug={project.slug}
         title="جهت دریافت کاتالوگ کامل این پروژه"
         description="اطلاعات تکمیلی، مشخصات فنی و تصاویر پروژه را دریافت کنید."
         buttonText="دریافت کاتالوگ"

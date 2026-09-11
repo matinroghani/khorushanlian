@@ -1,3 +1,5 @@
+"use client";
+
 type ProjectTabsProps = {
   activeTab: string;
 };
@@ -10,15 +12,24 @@ const tabs = [
 ];
 
 export default function ProjectTabs({ activeTab }: ProjectTabsProps) {
+  const handleTabClick = (id: string) => {
+    const section = document.getElementById(id);
+
+    section?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <section className="w-full border-b border-(--color-border-light)">
-
       <div className="w-full px-(--spacing-page-x)">
-
         <div className="flex items-center justify-start gap-8 overflow-x-auto pt-1">
           {tabs.map((tab) => (
             <button
               key={tab.id}
+              type="button"
+              onClick={() => handleTabClick(tab.id)}
               className={`whitespace-nowrap border-b-2 pb-3 pt-4 text-sm transition-colors ${
                 activeTab === tab.id
                   ? "border-(--color-blue-500) font-bold text-(--color-blue-500)"
@@ -29,7 +40,6 @@ export default function ProjectTabs({ activeTab }: ProjectTabsProps) {
             </button>
           ))}
         </div>
-
       </div>
     </section>
   );

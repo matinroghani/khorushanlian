@@ -43,6 +43,21 @@ export default function ProjectCard({ item }: ProjectCardProps) {
         hover:shadow-[var(--shadow-lg)]
       "
     >
+      <Link
+        href={item.href}
+        aria-label={`مشاهده جزئیات پروژه ${item.title}`}
+        className="
+          absolute
+          inset-0
+          z-20
+          rounded-(--radius-lg)
+          focus-visible:outline-none
+          focus-visible:ring-2
+          focus-visible:ring-(--color-blue-500)
+          focus-visible:ring-offset-2
+        "
+      />
+
       {/* Visual */}
       <div
         className="
@@ -139,21 +154,12 @@ export default function ProjectCard({ item }: ProjectCardProps) {
                 }
               `}
             />
-
             {statusLabels[item.status]}
           </span>
         </div>
 
         {/* Project title */}
-        <div
-          className="
-            absolute
-            inset-x-0
-            bottom-0
-            p-5
-            sm:p-6
-          "
-        >
+        <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
           <div
             className="
               mb-2
@@ -166,17 +172,11 @@ export default function ProjectCard({ item }: ProjectCardProps) {
               text-(--color-blue-400)
             "
           >
-            <span
-              className="
-                h-px
-                w-5
-                bg-(--color-blue-400)
-              "
-            />
-
+            <span className="h-px w-5 bg-(--color-blue-400)" />
             {categoryLabels[item.category]}
           </div>
 
+          {/* ✅ دیگر داخل <Link> نیست - فقط h2 */}
           <h2
             className="
               text-lg
@@ -223,15 +223,7 @@ export default function ProjectCard({ item }: ProjectCardProps) {
       </div>
 
       {/* Content */}
-      <div
-        className="
-          flex
-          flex-1
-          flex-col
-          p-5
-          sm:p-6
-        "
-      >
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
         {/* Description */}
         <p
           className="
@@ -270,7 +262,6 @@ export default function ProjectCard({ item }: ProjectCardProps) {
             >
               کارفرما
             </span>
-
             <span
               className="
                 line-clamp-1
@@ -295,7 +286,6 @@ export default function ProjectCard({ item }: ProjectCardProps) {
             >
               موقعیت
             </span>
-
             <div
               className="
                 flex
@@ -312,7 +302,6 @@ export default function ProjectCard({ item }: ProjectCardProps) {
                 strokeWidth={1.8}
                 className="shrink-0 text-(--color-blue-500)"
               />
-
               <span className="truncate">{item.location}</span>
             </div>
           </div>
@@ -342,18 +331,18 @@ export default function ProjectCard({ item }: ProjectCardProps) {
                   strokeWidth={2}
                   className="text-(--color-blue-500)"
                 />
-
                 {feature}
               </span>
             ))}
           </div>
         )}
 
-        {/* CTA */}
-        <Link
-          href={item.href}
+        {/* 
+          ✅ CTA فقط بصری است (لینک نیست) چون کل کارت لینک است.
+          hover با group کار می‌کند.
+        */}
+        <div
           className="
-            group/link
             mt-5
             flex
             items-center
@@ -366,7 +355,7 @@ export default function ProjectCard({ item }: ProjectCardProps) {
             text-(--color-text-primary)
             transition-colors
             duration-200
-            hover:text-(--color-blue-500)
+            group-hover:text-(--color-blue-500)
           "
         >
           <span>مشاهده جزئیات پروژه</span>
@@ -383,9 +372,9 @@ export default function ProjectCard({ item }: ProjectCardProps) {
               border-(--color-border)
               transition-all
               duration-300
-              group-hover/link:border-(--color-blue-500)
-              group-hover/link:bg-(--color-blue-500)
-              group-hover/link:text-white
+              group-hover:border-(--color-blue-500)
+              group-hover:bg-(--color-blue-500)
+              group-hover:text-white
             "
           >
             <ArrowLeft
@@ -394,11 +383,11 @@ export default function ProjectCard({ item }: ProjectCardProps) {
               className="
                 transition-transform
                 duration-300
-                group-hover/link:-translate-x-0.5
+                group-hover:-translate-x-0.5
               "
             />
           </span>
-        </Link>
+        </div>
       </div>
     </article>
   );

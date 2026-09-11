@@ -11,12 +11,12 @@ export const projectItems: ProjectType[] = [
     description:
       "طراحی، تأمین و راه‌اندازی سیستم تولید برق اضطراری برای تأمین پایدار انرژی مجموعه صنعتی.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     gallery: [
-      "/images/ui/projects/diesel/diesel-project.jpg",
-      "/images/ui/projects/diesel/diesel-project.jpg",
-      "/images/ui/projects/diesel/diesel-project.jpg",
+      "/images/ui/homepage/projects/diesel/diesel-project.jpg",
+      "/images/ui/homepage/projects/diesel/diesel-project.jpg",
+      "/images/ui/homepage/projects/diesel/diesel-project.jpg",
     ],
 
     client: "مجموعه صنعتی",
@@ -82,7 +82,7 @@ export const projectItems: ProjectType[] = [
     description:
       "اجرای کامل سیستم دیزل ژنراتور صنعتی شامل نصب، راه‌اندازی، تست و تحویل تجهیزات.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "واحد صنعتی",
     location: "عسلویه",
@@ -142,7 +142,7 @@ export const projectItems: ProjectType[] = [
     description:
       "بازسازی اساسی و اورهال تخصصی دیزل ژنراتور با هدف افزایش قابلیت اطمینان و کاهش توقفات عملیاتی.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "مجتمع تولیدی",
     location: "بندرعباس",
@@ -202,7 +202,7 @@ export const projectItems: ProjectType[] = [
     description:
       "تأمین و نصب تجهیزات برق و مولدهای مورد نیاز شناور با تمرکز بر عملکرد پایدار در شرایط دریایی.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "مجموعه کشتیرانی",
     location: "بوشهر",
@@ -262,7 +262,7 @@ export const projectItems: ProjectType[] = [
     description:
       "طراحی و اجرای سیستم کنترل و انتقال خودکار برق برای افزایش پایداری شبکه و کاهش زمان قطعی.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "مجموعه صنعتی",
     location: "ماهشهر",
@@ -322,7 +322,7 @@ export const projectItems: ProjectType[] = [
     description:
       "تأمین و نصب مولد برق اضطراری متناسب با نیاز مصرفی و شرایط عملیاتی مجموعه.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "کارخانه صنعتی",
     location: "اصفهان",
@@ -381,7 +381,7 @@ export const projectItems: ProjectType[] = [
     description:
       "ارائه خدمات تعمیر، عیب‌یابی و نگهداری تجهیزات نیروگاهی با هدف افزایش طول عمر و آمادگی عملیاتی.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "نیروگاه صنعتی",
     location: "بوشهر",
@@ -440,7 +440,7 @@ export const projectItems: ProjectType[] = [
     description:
       "بازسازی و بهینه‌سازی سیستم برق یک شناور با هدف افزایش ایمنی و پایداری تجهیزات.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "مالک شناور",
     location: "بندر بوشهر",
@@ -499,7 +499,7 @@ export const projectItems: ProjectType[] = [
     description:
       "بررسی فنی سیستم تولید برق و ارائه راهکارهای مهندسی برای افزایش بهره‌وری و قابلیت اطمینان.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "مجموعه صنعتی",
     location: "عسلویه",
@@ -558,7 +558,7 @@ export const projectItems: ProjectType[] = [
     description:
       "تأمین، نصب و راه‌اندازی تجهیزات مکانیکی و الکتریکی مورد نیاز مجموعه صنعتی.",
 
-    image: "/images/ui/projects/diesel/diesel-project.jpg",
+    image: "/images/ui/homepage/projects/diesel/diesel-project.jpg",
 
     client: "مجموعه صنعتی",
     location: "بوشهر",

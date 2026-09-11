@@ -4,7 +4,7 @@ import { Cog, Factory, Ship, Zap, Wrench } from "lucide-react";
 export const industrialSolutionItems: IndustrialSolutionType[] = [
   {
     id: 1,
-    image: "/images/ui/solutions/emergency-power.jpg",
+    image: "/images/ui/homepage/homepage/solutions/emergency-power.jpg",
     icon: Zap,
     title: "سیستم‌های تولید برق اضطراری",
     description:
@@ -13,7 +13,7 @@ export const industrialSolutionItems: IndustrialSolutionType[] = [
   },
   {
     id: 2,
-    image: "/images/ui/solutions/emergency-power.jpg",
+    image: "/images/ui/homepage/solutions/emergency-power.jpg",
     icon: Factory,
     title: "نیروگاه‌های دیزل و گاز",
     description:
@@ -22,7 +22,7 @@ export const industrialSolutionItems: IndustrialSolutionType[] = [
   },
   {
     id: 3,
-    image: "/images/ui/solutions/emergency-power.jpg",
+    image: "/images/ui/homepage/solutions/emergency-power.jpg",
     icon: Ship,
     title: "مهندسی و تجهیزات دریایی",
     description:
@@ -31,7 +31,7 @@ export const industrialSolutionItems: IndustrialSolutionType[] = [
   },
   {
     id: 4,
-    image: "/images/ui/solutions/emergency-power.jpg",
+    image: "/images/ui/homepage/solutions/emergency-power.jpg",
     icon: Wrench,
     title: "تعمیر و نگهداری تجهیزات",
     description:
@@ -40,7 +40,7 @@ export const industrialSolutionItems: IndustrialSolutionType[] = [
   },
   {
     id: 5,
-    image: "/images/ui/solutions/emergency-power.jpg",
+    image: "/images/ui/homepage/solutions/emergency-power.jpg",
     icon: Cog,
     title: "مشاوره و راهکارهای مهندسی",
     description:

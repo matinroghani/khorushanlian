@@ -38,7 +38,7 @@ export default function AboutFeature() {
           "
         >
           <Image
-            src="/images/ui/whyUs/whyUs-image.jpg"
+            src="/images/ui/homepage/whyUs/whyUs-image.jpg"
             alt="چرا ما؟ - تصویر صنایع حیاتی"
             width={800}
             height={800}

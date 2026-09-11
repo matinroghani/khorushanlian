@@ -4,7 +4,7 @@ import { Cog, Factory, Ship, Zap, Wrench } from "lucide-react";
 export const industrialSolutionItems: IndustrialSolutionType[] = [
   {
     id: 1,
-    image: "/images/ui/homepage/homepage/solutions/emergency-power.jpg",
+    image: "/images/ui/homepage/solutions/emergency-power.jpg",
     icon: Zap,
     title: "سیستم‌های تولید برق اضطراری",
     description:

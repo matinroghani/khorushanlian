@@ -3,7 +3,8 @@
 import { useSearchParams } from "next/navigation";
 
 import { projectItems } from "@/data/projects-mocks/projects";
-import ProjectCard from "@/components/shared/ProjectCard/ProjectCard";
+import ProjectCard from "@/components/shared/projects/ProjectCard/ProjectCard";
+import ProjectCTA from "@/components/shared/Cta's/Project-Cta/ProjectCTA";
 
 export default function ProjectGrid() {
   const searchParams = useSearchParams();
@@ -12,9 +13,7 @@ export default function ProjectGrid() {
   const filteredProjects =
     !category || category === "all"
       ? projectItems
-      : projectItems.filter(
-          (project) => project.category === category,
-        );
+      : projectItems.filter((project) => project.category === category);
 
   return (
     <section>
@@ -29,10 +28,7 @@ export default function ProjectGrid() {
         "
       >
         {filteredProjects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            item={project}
-          />
+          <ProjectCard key={project.id} item={project} />
         ))}
       </div>
 
@@ -55,6 +51,12 @@ export default function ProjectGrid() {
           پروژه‌ای در این دسته‌بندی یافت نشد.
         </div>
       )}
+
+      <ProjectCTA
+        title="کاتالوگ کامل پروژه‌های دریای خروشان لیان"
+        description="اطلاعات تکمیلی، مشخصات فنی و سوابق اجرایی پروژه‌های ما را دریافت کنید."
+        buttonText="دریافت کاتالوگ پروژه‌ها"
+      />
     </section>
   );
 }

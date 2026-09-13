@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "@/components/shared/ProjectCard/ProjectCard";
+import ProjectCard from "@/components/shared/projects/ProjectCard/ProjectCard";
 import { projectItems } from "@/data/projects-mocks/projects";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";

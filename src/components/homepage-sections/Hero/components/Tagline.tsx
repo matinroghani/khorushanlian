@@ -1,5 +1,5 @@
-import PrimaryCta from "@/components/shared/Cta/PrimaryCta";
-import SecondaryCta from "@/components/shared/Cta/SecondaryCta";
+import PrimaryCta from "@/components/shared/Cta's/Main-Button-Cta/PrimaryCta";
+import SecondaryCta from "@/components/shared/Cta's/Main-Button-Cta/SecondaryCta";
 import { ArrowLeft } from "lucide-react";
 
 export default function Tagline() {

@@ -15,7 +15,7 @@ import ProjectOverview from "@/components/project-sections/Project-Detail/Projec
 import ProjectSidebar from "@/components/project-sections/Project-Detail/ProjectSidebar";
 import ProjectGallery from "@/components/project-sections/Project-Detail/ProjectGallery";
 import ProjectEquipment from "@/components/project-sections/Project-Detail/ProjectEquipment";
-import ProjectCTA from "@/components/project-sections/Project-Detail/ProjectCTA";
+import ProjectCTA from "@/components/shared/Cta's/Project-Cta/ProjectCTA";
 
 type ProjectPageProps = {
   params: Promise<{

@@ -1,7 +1,7 @@
 import Logo from "@/components/shared/Logo/Logo";
 import HeaderItems from "./components/Header-Items";
-import PrimaryCta from "@/components/shared/Cta/PrimaryCta";
-import SecondaryCta from "@/components/shared/Cta/SecondaryCta";
+import PrimaryCta from "@/components/shared/Cta's/Main-Button-Cta/PrimaryCta";
+import SecondaryCta from "@/components/shared/Cta's/Main-Button-Cta/SecondaryCta";
 import { Phone } from "lucide-react";
 
 export default function HeaderContent() {

@@ -1,5 +1,5 @@
-import PrimaryCta from "@/components/shared/Cta/PrimaryCta";
-import SecondaryCta from "@/components/shared/Cta/SecondaryCta";
+import PrimaryCta from "@/components/shared/Cta's/Main-Button-Cta/PrimaryCta";
+import SecondaryCta from "@/components/shared/Cta's/Main-Button-Cta/SecondaryCta";
 import { ArrowLeft, Phone, ShieldCheck, Wrench } from "lucide-react";
 
 export default function Cta() {
@@ -119,9 +119,8 @@ export default function Cta() {
               lg:leading-7
             "
           >
-            برای تعمیرات، نگهداری، تأمین توان اضطراری و مشاوره فنی،
-            راهکار متناسب با نیاز پروژه خود را با تیم دریای خروشان لیان بررسی
-            کنید.
+            برای تعمیرات، نگهداری، تأمین توان اضطراری و مشاوره فنی، راهکار
+            متناسب با نیاز پروژه خود را با تیم دریای خروشان لیان بررسی کنید.
           </p>
 
           {/* Indicators */}
@@ -157,10 +156,7 @@ export default function Cta() {
         >
           <PrimaryCta title="تماس با ما" />
 
-          <SecondaryCta
-            title="درخواست مشاوره فنی"
-            icon={ArrowLeft}
-          />
+          <SecondaryCta title="درخواست مشاوره فنی" icon={ArrowLeft} />
         </div>
       </div>
 

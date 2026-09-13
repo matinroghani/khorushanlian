@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { projectItems } from "@/data/projects-mocks/projects";
-import ProjectCatalog from "@/components/shared/ProjectCatalog/ProjectCatalog";
+import ProjectCatalog from "@/components/shared/projects/ProjectCatalog/ProjectCatalog";
 
 type CatalogPageProps = {
   params: Promise<{

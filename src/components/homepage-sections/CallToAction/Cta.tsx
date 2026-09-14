@@ -9,7 +9,6 @@ export default function Cta() {
         relative
         isolate
         overflow-hidden
-        rounded-(--radius-xl)
         border
         border-(--color-blue-500)/20
         bg-(--color-navy-950)

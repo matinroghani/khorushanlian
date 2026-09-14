@@ -1,4 +1,4 @@
-import { ProjectType } from "@/types/homepage-types/projects/idnex";
+import { ProjectType } from "@/types/projects-types/projects/idnex";
 import {
   ProjectDetailEquipment,
   ProjectDetailGalleryImage,

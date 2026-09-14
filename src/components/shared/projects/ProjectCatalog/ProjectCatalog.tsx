@@ -1,4 +1,4 @@
-import { ProjectType } from "@/types/homepage-types/projects/idnex";
+import { ProjectType } from "@/types/projects-types/projects/idnex";
 
 type ProjectCatalogProps = {
   project: ProjectType;
@@ -128,9 +128,7 @@ export default function ProjectCatalog({ project }: ProjectCatalogProps) {
                 <div className="px-3 py-2.5 text-center font-mono text-[10px] text-(--color-text-muted)">
                   {String(index + 1).padStart(2, "0")}
                 </div>
-                <div className="px-3 py-2.5 font-semibold">
-                  {spec.label}
-                </div>
+                <div className="px-3 py-2.5 font-semibold">{spec.label}</div>
                 <div className="px-3 py-2.5 text-(--color-text-secondary)">
                   {spec.value}
                 </div>
@@ -192,9 +190,7 @@ export default function ProjectCatalog({ project }: ProjectCatalogProps) {
 
         {/* --- Footer --- */}
         <footer className="flex flex-col gap-2 border-t border-(--color-border-light) pt-4 text-[10px] text-(--color-text-muted) sm:flex-row sm:items-center sm:justify-between">
-          <span>
-            دریای خروشان لیان — راهکارهای مهندسی برای سیستم‌های حیاتی
-          </span>
+          <span>دریای خروشان لیان — راهکارهای مهندسی برای سیستم‌های حیاتی</span>
           <span className="font-mono">
             khorushanlian.ir · {projectCode(project.id)}
           </span>

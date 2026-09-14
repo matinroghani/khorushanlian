@@ -1,9 +1,9 @@
 "use client";
 
-import { productItems } from "@/data/homepage-mocks/products";
+import { productItems } from "@/data/products-mocks/products";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
-import ProductCard from "./Product-Card";
+import ProductCard from "../../../shared/products/ProductCard/Product-Card";
 
 export default function ProductsCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({

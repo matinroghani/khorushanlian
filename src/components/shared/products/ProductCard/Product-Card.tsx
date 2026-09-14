@@ -1,4 +1,5 @@
-import { ProductType } from "@/types/homepage-types/product";
+import { productCategoryLabels } from "@/data/products-mocks/product-page/product-categories";
+import { ProductType } from "@/types/product-types/product";
 import { ArrowLeft, ArrowUpLeft, Check, Layers3 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,13 +8,6 @@ type ProductCardProps = {
   item: ProductType;
 };
 
-const categoryLabels: Record<ProductType["category"], string> = {
-  "power-generation": "تولید برق",
-  "industrial-equipment": "تجهیزات صنعتی",
-  "marine-equipment": "تجهیزات دریایی",
-  "control-systems": "سیستم‌های کنترلی",
-  "spare-parts": "قطعات یدکی",
-};
 
 export default function ProductCard({ item }: ProductCardProps) {
   return (
@@ -108,7 +102,7 @@ export default function ProductCard({ item }: ProductCardProps) {
             "
           />
 
-          {categoryLabels[item.category]}
+          {productCategoryLabels[item.category]}
         </div>
 
         {/* Product title on image */}

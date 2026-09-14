@@ -50,17 +50,11 @@ export async function GET(request: NextRequest) {
     });
 
     await page.emulateMediaType("print");
-    console.log("PDF URL:", catalogUrl);
     await page.goto(catalogUrl, {
       waitUntil: "networkidle0",
       timeout: 60000,
     });
-    console.log("PDF PAGE TITLE:", await page.title());
 
-    console.log(
-      "PDF PAGE H1:",
-      await page.$eval("h1", (el) => el.textContent).catch(() => "NO H1"),
-    );
     await page.evaluate(async () => {
       await document.fonts.ready;
 

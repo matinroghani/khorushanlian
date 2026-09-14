@@ -7,16 +7,13 @@ import {
   Settings2,
 } from "lucide-react";
 
-import type { ProjectType } from "@/types/homepage-types/projects/idnex";
+import type { ProjectType } from "@/types/projects-types/projects/idnex";
 
 type ProjectSidebarProps = {
   project: ProjectType;
 };
 
-const projectCategoryLabels: Record<
-  ProjectType["category"],
-  string
-> = {
+const projectCategoryLabels: Record<ProjectType["category"], string> = {
   "power-generation": "تولید و تأمین برق",
   industrial: "تجهیزات صنعتی",
   marine: "تجهیزات دریایی",
@@ -24,17 +21,12 @@ const projectCategoryLabels: Record<
   consulting: "خدمات مشاوره مهندسی",
 };
 
-const projectStatusLabels: Record<
-  ProjectType["status"],
-  string
-> = {
+const projectStatusLabels: Record<ProjectType["status"], string> = {
   completed: "تکمیل‌شده",
   ongoing: "در حال اجرا",
 };
 
-export default function ProjectSidebar({
-  project,
-}: ProjectSidebarProps) {
+export default function ProjectSidebar({ project }: ProjectSidebarProps) {
   const projectSpecs = [
     {
       label: "کارفرما",
@@ -72,43 +64,35 @@ export default function ProjectSidebar({
             PROJECT DATA
           </p>
 
-          <h3 className="text-base font-bold text-white">
-            مشخصات پروژه
-          </h3>
+          <h3 className="text-base font-bold text-white">مشخصات پروژه</h3>
         </div>
 
         {/* Project specs */}
         <div className="divide-y divide-(--color-border-light)">
-          {projectSpecs.map(
-            ({ label, value, icon: Icon }) => (
-              <div
-                key={label}
-                className="flex items-center gap-3 px-5 py-3.5 transition-colors hover:bg-(--color-surface-muted)"
-              >
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-(--color-surface-blue) text-(--color-blue-500)">
-                  <Icon size={15} strokeWidth={1.8} />
-                </div>
-
-                <div className="min-w-0 flex-1">
-                  <p className="text-[10px] text-(--color-text-muted)">
-                    {label}
-                  </p>
-
-                  <p className="mt-0.5 truncate text-xs font-bold text-(--color-text-primary)">
-                    {value}
-                  </p>
-                </div>
+          {projectSpecs.map(({ label, value, icon: Icon }) => (
+            <div
+              key={label}
+              className="flex items-center gap-3 px-5 py-3.5 transition-colors hover:bg-(--color-surface-muted)"
+            >
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-(--color-surface-blue) text-(--color-blue-500)">
+                <Icon size={15} strokeWidth={1.8} />
               </div>
-            ),
-          )}
+
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] text-(--color-text-muted)">{label}</p>
+
+                <p className="mt-0.5 truncate text-xs font-bold text-(--color-text-primary)">
+                  {value}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Catalog CTA */}
         <div className="border-t border-(--color-border-light) bg-(--color-surface) p-4">
           <Link
-            href={`/api/projects/${encodeURIComponent(
-              project.slug,
-            )}/catalog`}
+            href={`/api/projects/${encodeURIComponent(project.slug)}/catalog`}
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-(--color-blue-500) px-4 py-3 text-sm font-bold text-white transition-all hover:bg-(--color-navy-800) hover:shadow-lg hover:shadow-blue-500/15"
           >
             <Download size={16} />

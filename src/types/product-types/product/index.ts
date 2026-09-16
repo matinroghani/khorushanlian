@@ -18,6 +18,13 @@ export type ProductBrand =
   | "doosan"
   | "other";
 
+export type ProductKeyFeatureIcon =
+  | "wrench"
+  | "battery"
+  | "fuel"
+  | "gear"
+  | "shield";
+
 export interface ProductFilterSpecs {
   powerKva?: number;
   voltage?: number;
@@ -41,7 +48,7 @@ export interface ProductKeyFeature {
   id: number;
   title: string;
   description: string;
-  icon: string;
+  icon: ProductKeyFeatureIcon;
 }
 
 export interface ProductTechnicalSpec {
@@ -60,9 +67,9 @@ export interface ProductRelatedItem {
   title: string;
   model: string;
   image: string;
-  power: string;
-  voltage: string;
-  frequency: string;
+  power?: string;
+  voltage?: string;
+  frequency?: string;
   href: string;
 }
 
@@ -71,32 +78,45 @@ export interface ProductBreadcrumb {
   href?: string;
 }
 
+export interface ProductAvailability {
+  status: ProductAvailabilityStatus;
+  label: string;
+}
+
 export interface ProductType {
   id: number;
   title: string;
+  model: string;
   category: ProductCategory;
+
   description: string;
+  longDescription: string;
+
   image: string;
+
+  specifications: ProductFilterSpecs;
+
+  gallery: ProductGalleryItem[];
+
+  badges: ProductBadge[];
+
   features: string[];
+
+  keyFeatures: ProductKeyFeature[];
+
+  technicalSpecs: ProductTechnicalSpec[];
+
+  sidebarSpecs: ProductSidebarSpec[];
+
+  availability: ProductAvailability;
+
   href: string;
 
-  specifications?: ProductFilterSpecs;
-
-  model?: string;
-  longDescription?: string;
-  gallery?: ProductGalleryItem[];
-  badges?: ProductBadge[];
-  keyFeatures?: ProductKeyFeature[];
-  technicalSpecs?: ProductTechnicalSpec[];
-  sidebarSpecs?: ProductSidebarSpec[];
-
-  availability?: {
-    status: ProductAvailabilityStatus;
-    label: string;
-  };
-
   catalogUrl?: string;
-  consultationUrl?: string;
-  breadcrumbs?: ProductBreadcrumb[];
-  relatedProducts?: ProductRelatedItem[];
+
+  consultationUrl: string;
+
+  breadcrumbs: ProductBreadcrumb[];
+
+  relatedProducts: ProductRelatedItem[];
 }

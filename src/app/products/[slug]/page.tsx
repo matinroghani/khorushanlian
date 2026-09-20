@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { productItems } from "@/data/products-mocks/products";
-import ProductHero from "@/components/product-section/Product-Detail/Hero/Product-Hero";
-import ProductTabs from "@/components/product-section/Product-Detail/Tabs/Product-Tabs";
-import ProductOverview from "@/components/product-section/Product-Detail/Overview/Product-Overview";
-import ProductKeyFeatures from "@/components/product-section/Product-Detail/Key-Features/Product-Key-Features";
-import ProductTechnicalSpecs from "@/components/product-section/Product-Detail/Technical-Specs/Product-Technical-Specs";
-import ProductRelated from "@/components/product-section/Product-Detail/ProductRelated/ProductRelated";
+import ProductHero from "@/components/product-sections/Product-Detail/Hero/Product-Hero";
+import ProductTabs from "@/components/product-sections/Product-Detail/Tabs/Product-Tabs";
+import ProductOverview from "@/components/product-sections/Product-Detail/Overview/Product-Overview";
+import ProductKeyFeatures from "@/components/product-sections/Product-Detail/Key-Features/Product-Key-Features";
+import ProductTechnicalSpecs from "@/components/product-sections/Product-Detail/Technical-Specs/Product-Technical-Specs";
+import ProductRelated from "@/components/product-sections/Product-Detail/ProductRelated/ProductRelated";
 import ProductCTA from "@/components/shared/Cta's/Product-Cta/ProductCta";
 
 type ProductPageProps = {

@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 
-import ProductsHero from "@/components/product-section/Product-Archive/Hero/ProductHero";
-import ProductGrid from "@/components/product-section/Product-Archive/Product-Grid/Product-Grid";
+import ProductsHero from "@/components/product-sections/Product-Archive/Hero/ProductHero";
+import ProductGrid from "@/components/product-sections/Product-Archive/Product-Grid/Product-Grid";
 
 /* ─── Industrial loading fallback ─── */
 function ProductGridFallback() {

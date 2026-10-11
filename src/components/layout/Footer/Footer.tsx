@@ -38,7 +38,7 @@ export default function Footer() {
 
       <div className="border-t border-(--navbar-border)/20 pt-3">
         <p className="text-center text-[10px] tracking-wider text-(--color-surface)/40">
-          © ۱۴۰۵ دریای خروشان لیان — تمامی حقوق محفوظ است.{" "}
+          © ۱۴۰۵ شرکت مهندسی- صنعتی — تمامی حقوق محفوظ است.{" "}
         </p>
       </div>
     </footer>

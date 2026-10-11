@@ -34,10 +34,10 @@ export default function ProjectCatalog({ project }: ProjectCatalogProps) {
           <div className="flex items-center gap-2.5">
             <img
               src="/images/logos/main-logo.png"
-              alt="دریای خروشان لیان"
+              alt="شرکت مهندسی- صنعتی"
               className="h-6 w-auto object-contain"
             />
-            <span className="text-xs font-bold">دریای خروشان لیان</span>
+            <span className="text-xs font-bold">شرکت مهندسی- صنعتی</span>
           </div>
 
           <span className="font-mono text-[10px] tracking-wider text-(--color-text-muted)">
@@ -190,7 +190,9 @@ export default function ProjectCatalog({ project }: ProjectCatalogProps) {
 
         {/* --- Footer --- */}
         <footer className="flex flex-col gap-2 border-t border-(--color-border-light) pt-4 text-[10px] text-(--color-text-muted) sm:flex-row sm:items-center sm:justify-between">
-          <span>دریای خروشان لیان — راهکارهای مهندسی برای سیستم‌های حیاتی</span>
+          <span>
+            شرکت مهندسی- صنعتی — راهکارهای مهندسی برای سیستم‌های حیاتی
+          </span>
           <span className="font-mono">
             khorushanlian.ir · {projectCode(project.id)}
           </span>

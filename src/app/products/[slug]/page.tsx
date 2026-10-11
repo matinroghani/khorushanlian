@@ -43,7 +43,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${product.title} | ${product.model} | دریای خروشان لیان`,
+    title: `${product.title} | ${product.model} | شرکت مهندسی- صنعتی`,
     description: product.description,
   };
 }

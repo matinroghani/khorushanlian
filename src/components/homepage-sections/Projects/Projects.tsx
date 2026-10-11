@@ -59,7 +59,7 @@ export default function Projects() {
         <div className="max-w-2xl">
           <SectionTitle
             title="پروژه‌های اجرا شده"
-            description="نمونه‌ای از پروژه‌های مهندسی و صنعتی خروشان لیان"
+            description="نمونه‌ای از پروژه‌های مهندسی و صنعتی شرکت مهندسی-صنعتی "
           />
         </div>
 

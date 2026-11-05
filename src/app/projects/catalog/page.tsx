@@ -43,13 +43,13 @@ export default function ProjectsCatalogPage() {
           <div className="flex items-center gap-2">
             <Image
               src="/images/logos/main-logo.png"
-              alt="شرکت مهندسی- صنعتی"
+              alt="دریای خروشان لیان"
               width={90}
               height={24}
               className="h-5 w-auto object-contain"
             />
 
-            <span className="text-[10px] font-bold">شرکت مهندسی- صنعتی</span>
+            <span className="text-[10px] font-bold">دریای خروشان لیان</span>
           </div>
 
           <span
@@ -270,7 +270,7 @@ export default function ProjectsCatalogPage() {
                       DKL-PRJ-{String(project.id).padStart(4, "0")}
                     </span>
 
-                    <span>شرکت مهندسی- صنعتی</span>
+                    <span>دریای خروشان لیان</span>
                   </div>
                 </div>
               </article>
@@ -294,7 +294,7 @@ export default function ProjectsCatalogPage() {
             text-(--color-text-muted)
           "
         >
-          <span>شرکت مهندسی- صنعتی — راهکارهای مهندسی</span>
+          <span>دریای خروشان لیان — راهکارهای مهندسی</span>
 
           <span className="font-mono">khorushanlian.ir</span>
         </div>

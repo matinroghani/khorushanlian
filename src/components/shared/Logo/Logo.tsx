@@ -15,7 +15,7 @@ export default function Logo({ size = 60 }: LogoProps) {
       >
         <Image
           src="/images/logos/main-logo.png"
-          alt="لوگوی شرکت مهندسی- صنعتی"
+          alt="لوگوی دریای خروشان لیان"
           fill
           priority
           className="object-contain"
@@ -25,7 +25,7 @@ export default function Logo({ size = 60 }: LogoProps) {
 
       <div className="flex flex-col gap-0.5">
         <span className="text-base font-bold leading-tight text-(--color-surface) sm:text-lg">
-          شرکت مهندسی- صنعتی
+          دریای خروشان لیان
         </span>
 
         <span className="text-xs font-medium leading-tight text-(--color-surface)/55 sm:text-sm">
